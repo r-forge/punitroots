@@ -1,0 +1,13 @@
+Package: punitroots
+Version: 0.0-1
+Date: 2011-05-10
+Title: Unit Roots in Panels of Time Series
+Author@R: c(person(given = "Christian", family = "Kleiber", role = c("aut", "cre"), email = "Christian.Kleiber@unibas.ch"),
+            person(given = "Claudio", family = "Lupi", role = "aut"))
+Author: Christian Kleiber [aut, cre], Claudio Lupi [aut]
+Maintainer: Christian Kleiber <Christian.Kleiber@unibas.ch>
+Description: Tests for unit roots in panels of (economic) time series, with and without cross-sectional dependence.
+Depends: R (>= 2.10.0), stats, CADFtest
+Imports: graphics
+Suggests: plm
+License: GPL-2

@@ -1,0 +1,20 @@
+Package: punitroots
+Title: Tests for unit roots in panels of (economic) time series, with
+        and without cross-sectional dependence.
+Version: 0.0-1
+Date: 2011-5-13
+Author: Christian Kleiber & Claudio Lupi
+Maintainer: Claudio Lupi <lupi@unimol.it>
+Depends: CADFtest
+Suggests: plm, urca, tseries, fUnitRoots
+Description: This package performs the panel unit root tests advocated
+        in Choi (2001), Demetrescu et al. (2006), Hanck (2008) and
+        Costantini and Lupi (2011) can also be performed.
+License: GPL (>= 2)
+URL: http://www.r-forge.r-project.org
+LazyLoad: yes
+LazyData: yes
+Packaged: 2011-5-13 12:23:51 UTC
+Repository: r-forge
+Date/Publication: 2011-5-13 13:10:07
+Built: R 2.13.0; ; 2011-05-13 16:05:13 UTC; unix

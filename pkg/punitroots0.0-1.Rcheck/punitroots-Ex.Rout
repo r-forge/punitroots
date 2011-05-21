@@ -1,0 +1,148 @@
+
+R version 2.13.0 (2011-04-13)
+Copyright (C) 2011 The R Foundation for Statistical Computing
+ISBN 3-900051-07-0
+Platform: x86_64-pc-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> pkgname <- "punitroots"
+> source(file.path(R.home("share"), "R", "examples-header.R"))
+> options(warn = 1)
+> library('punitroots')
+Loading required package: CADFtest
+Loading required package: dynlm
+Loading required package: zoo
+Loading required package: lmtest
+Loading required package: car
+Loading required package: MASS
+Loading required package: nnet
+Loading required package: survival
+Loading required package: splines
+Loading required package: sandwich
+Loading required package: tseries
+Loading required package: quadprog
+Loading required package: urca
+> 
+> assign(".oldSearch", search(), pos = 'CheckExEnv')
+> cleanEx()
+> nameEx("Hartung")
+> ### * Hartung
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: Hartung
+> ### Title: Hartung's combination test for dependent p-values
+> ### Aliases: Hartung
+> ### Keywords: htest
+> 
+> ### ** Examples
+> 
+>   fake.pvalues <- runif(20)
+>   Hartung(fake.pvalues)
+
+	modified inverse normal combination
+
+data:  fake.pvalues 
+Ht = 0.5573, N = 20, p-value = 0.7113
+alternative hypothesis: true is less than 0 
+ percent confidence interval:
+ -0.7828550  0.4016239 
+sample estimates:
+average estimated correlation 
+                   0.05067543 
+
+> 
+> 
+> 
+> cleanEx()
+> nameEx("Pesaran")
+> ### * Pesaran
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: Pesaran
+> ### Title: Pesaran's test for cross-correlation among panel units.
+> ### Aliases: Pesaran
+> ### Keywords: htest
+> 
+> ### ** Examples
+> 
+>   fake.resids <- matrix(rnorm(1000),100,10)
+>   Pesaran(fake.resids)
+
+	Pesaran's test for residuals cross-correlation
+
+data:  fake.resids 
+CD = 0.6081, N = 10, T = 100, p-value = 0.5431
+alternative hypothesis: true CD is not equal to 0 
+
+> 
+> 
+> 
+> cleanEx()
+> nameEx("Simes")
+> ### * Simes
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: Simes
+> ### Title: Simes' test for panel unit root
+> ### Aliases: Simes
+> ### Keywords: Simes test
+> 
+> ### ** Examples
+> 
+> data("GDPseries")
+> Y <- log(GDPseries)
+> Demetrescuetal.test <- pCADFtest(Y, max.lag.y = 2, criterion = "AIC")
+> Simes(Demetrescuetal.test, c(0.01, 0.05, 0.10))
+[1] TRUE TRUE TRUE
+> 
+> 
+> 
+> cleanEx()
+> nameEx("pCADFtest")
+> ### * pCADFtest
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: pCADFtest
+> ### Title: Panel Covariate-Augmented Dickey Fuller (CADF) test for unit
+> ###   roots
+> ### Aliases: pCADFtest
+> ### Keywords: ts htest
+> 
+> ### ** Examples
+> 
+> data("GDPseries")
+> Y <- log(GDPseries)
+> Demetrescuetal.test <- pCADFtest(Y, max.lag.y = 2, criterion = "AIC")
+> 
+> 
+> 
+> ### * <FOOTER>
+> ###
+> cat("Time elapsed: ", proc.time() - get("ptime", pos = 'CheckExEnv'),"\n")
+Time elapsed:  3.79 0.08 4.009 0 0 
+> grDevices::dev.off()
+null device 
+          1 
+> ###
+> ### Local variables: ***
+> ### mode: outline-minor ***
+> ### outline-regexp: "\\(> \\)?### [*]+" ***
+> ### End: ***
+> quit('no')

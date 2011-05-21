@@ -1,0 +1,9 @@
+GDPseries               OECD statistics on GDP, unemployment rates, and
+                        industrial production indices.
+Hartung                 Hartung's combination test for dependent
+                        p-values
+Pesaran                 Pesaran's test for cross-correlation among
+                        panel units.
+Simes                   Simes' test for panel unit root
+pCADFtest               Panel Covariate-Augmented Dickey Fuller (CADF)
+                        test for unit roots

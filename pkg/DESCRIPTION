@@ -9,5 +9,5 @@ Maintainer: Christian Kleiber <Christian.Kleiber@unibas.ch>
 Description: Tests for unit roots in panels of (economic) time series, with and without cross-sectional dependence.
 Depends: R (>= 2.10.0), stats, CADFtest
 Imports: graphics
-Suggests: plm
+Suggests: plm, urca, tseries, fUnitRoots
 License: GPL-2

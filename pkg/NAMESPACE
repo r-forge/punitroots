@@ -1,0 +1,11 @@
+## exported functions
+export(
+  "pCADFtest",
+  "Hartung",
+  "Pesaran",
+  "Simes")
+
+## methods for class CADFtest
+  S3method("summary", "pCADFtest")
+  S3method("print", "pCADFtestsummary")
+

@@ -58,6 +58,7 @@ Section Dependence, \emph{Journal of Applied Econometrics}, \bold{22}(2), 265--3
 }
 
 \examples{
+data("OECDrealex")
 plot(OECDrealex[,1:4])
 
 ## try: selected values from Pesaran, Table X

@@ -47,6 +47,7 @@ Inflation Rate?  Evidence from Sequential Break and Panel Data Models.
 }
 
 \examples{
+data("OECDcpi")
 library("CADFtest")
 
 ## selected values from Culver and Papell, Table I

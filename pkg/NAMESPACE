@@ -1,6 +1,7 @@
 ## exported functions
 export(
   "pCADFtest",
+  "pfisher",
   "Hartung",
   "Pesaran",
   "Simes")

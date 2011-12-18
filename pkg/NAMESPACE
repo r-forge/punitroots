@@ -2,6 +2,7 @@
 export(
   "pCADFtest",
   "pfisher",
+  "phadri",
   "Hartung",
   "Pesaran",
   "Simes")

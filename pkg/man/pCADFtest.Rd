@@ -3,7 +3,7 @@
 \title{Panel Covariate-Augmented Dickey Fuller (CADF) test for unit roots}
 \description{
   This function implements the panel Covariate Augmented Dickey-Fuller (pCADF) test developed in
-  Costantini and Lupi (2011). The panel unit root tests proposed in Choi (2001) and in
+  Costantini and Lupi (2012). The panel unit root tests proposed in Choi (2001) and in
   Demetrescu et al. (2006) can also be performed using this function.
 }
 \usage{
@@ -18,13 +18,13 @@ pCADFtest(Y, X=NULL, covariates=NULL, crosscorr=0.10, type="trend",
 	    The series may have different length.}
   \item{X}{a vector, a matrix, or a vector time series of stationary covariates. If no \code{X} is specified,
   then the tests proposed by Choi (2001) and Demetrescu et al. (2006) are performed. As an alternative, the pCADF
-  test (Costantini and Lupi 2011) can also be performed with the stationary covariate(s) derived from \code{Y}.} 
+  test (Costantini and Lupi 2012) can also be performed with the stationary covariate(s) derived from \code{Y}.} 
   \item{covariates}{a character or a vector of scalars containing integers from 1 to N. The default is \code{NULL}. 
   When \code{covariates = NULL} then tests proposed in Choi (2001) or Demetrescu et al. (2006) are performed 
   (no stationary covariates). If \code{covariates = "PC"}, the stationary covariate is computed as the difference 
   of the first principal component of \code{Y} and the same covariate is used for all the individual tests. 
   If \code{covariates = "DY"}, each individual test is carried out using the average of the other differenced \code{Y}. 
-  See Costantini and Lupi (2011) for details. Otherwise, \code{covariates} must be a vector of length equal to the number
+  See Costantini and Lupi (2012) for details. Otherwise, \code{covariates} must be a vector of length equal to the number
   of columns of \code{X}. The first number will indicate which column of \code{Y} is associated to the first stationary
   covariate represented by the first column of \code{X}; the second number identifies the correspondence between a 
   column of \code{Y} with the second column of \code{X} and so on.}
@@ -78,8 +78,8 @@ pCADFtest(Y, X=NULL, covariates=NULL, crosscorr=0.10, type="trend",
     Choi I (2001). Unit Root Tests for Panel Data, \emph{Journal of International Money and 
     Finance}, \bold{20}(2), 249--272.
 
-    Costantini M, Lupi C, (2011). A Simple Panel-CADF Test for Unit Roots. Economics Series n. 261, 
-    Institute for Advanced Studies, Vienna.
+    Costantini M, Lupi C, (2012). A Simple Panel-CADF Test for Unit Roots. \emph{Oxford Bulletin
+    of Economics \& Statistics}, doi: 10.1111/j.1468-0084.2012.00690.x.
 
     Hansen BE (1995). Rethinking the Univariate Approach to Unit Root Testing: Using
     Covariates to Increase Power, \emph{Econometric Theory}, \bold{11}(5), 1148--1171.

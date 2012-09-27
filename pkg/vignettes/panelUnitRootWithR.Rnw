@@ -50,8 +50,6 @@ This document has been last updated on \today.
 %\VignetteKeywords{unit root, stationary covariates, asymptotic p values, R}
 %\VignettePackage{CADFtest}
 
-\SweaveOpts{prefix.string=/home/claudio/Documents/Papers/LupiRJ2010/Docs/Fig,keep.source=TRUE}
-
 \begin{document}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

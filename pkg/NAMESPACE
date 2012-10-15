@@ -5,7 +5,8 @@ export(
   "phadri",
   "Hartung",
   "Pesaran",
-  "Simes")
+  "Simes",
+  "spsm")
 
 ## methods for class CADFtest
   S3method("summary", "pCADFtest")

@@ -1,6 +1,6 @@
 Package: punitroots
 Version: 0.0-2
-Date: 2012-10-15
+Date: 2012-10-20
 Title: Unit Roots in Panels of Time Series
 Author@R: c(person(given = "Christian", family = "Kleiber", role = c("aut", "cre"), email = "Christian.Kleiber@unibas.ch"),
             person(given = "Claudio", family = "Lupi", role = "aut"))

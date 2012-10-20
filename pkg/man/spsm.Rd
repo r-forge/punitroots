@@ -16,7 +16,7 @@
     \item{outcome}{Vector of identifiers of series considered to be I(0).}
 }
 \references{
-    Chortareas, G and Kapetanios, G (2009). Getting PPP Right: Identifying Mean-reverting Real Exchange Rates in Panels, \emph{Journal of Banking & Finance}, \bold{33} (2), 390--404.
+    Chortareas, G and Kapetanios, G (2009). Getting PPP Right: Identifying Mean-reverting Real Exchange Rates in Panels, \emph{Journal of Banking and Finance}, \bold{33} (2), 390--404.
 }
 \author{Claudio Lupi}
 

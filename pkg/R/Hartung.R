@@ -39,7 +39,7 @@ Hartung <- function(p, lambda=rep(1,length(p)), kappa=0.2, alpha=0.10)
   if (kappa=="formula2") kappa <- (1 + 1/(n-1) - rhostar)/5  # Hartung, p. 853
 
   # Hartung inverse normal corrected. See eqn. (2.4)
-  Ht <- sum(lambda*t)/sqrt(sum(lambda^2)+((sum(lambda))^2-sum(lambda^2))*(rhostar+kappa*sqrt(2/(n-1))*(1-rhostar)))
+  Ht <- sum(lambda*t)/sqrt(sum(lambda^2)+((sum(lambda))^2-sum(lambda^2))*(rhostar+kappa*sqrt(2/(n+1))*(1-rhostar)))
   lower <- 1 - (n-1)/qchisq(alpha/2, (n-1)) * q
   upper <- 1 - (n-1)/qchisq((1-alpha/2), (n-1)) * q          # Hartung, eqn. (2.3)
   
